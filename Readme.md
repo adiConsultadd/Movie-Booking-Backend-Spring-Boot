@@ -16,7 +16,7 @@ This is a Spring Boot-based Movie Booking API with JWT authentication, MySQL dat
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-repo/movie-booking-api.git
+git clone https://github.com/adiConsultadd/Movie-CRUD-Spring-Boot.git
 cd movie-booking-api
 ```
 
