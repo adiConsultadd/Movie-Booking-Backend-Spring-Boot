@@ -1,7 +1,7 @@
-# Movie Booking System API - Spring Boot
+# Movie Booking System Backend - Spring Boot
 
 ## Introduction
-This is a Spring Boot-based Movie Booking API with JWT authentication, MySQL database integration, and role-based access control.
+This is a Spring Boot-based Movie Booking Backend with JWT authentication, MySQL database integration, and role-based access control.
 
 ## Technologies Used
 - Java 17
@@ -16,7 +16,7 @@ This is a Spring Boot-based Movie Booking API with JWT authentication, MySQL dat
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/adiConsultadd/Movie-CRUD-Spring-Boot.git
+git clone https://github.com/adiConsultadd/Movie-Booking-Backend-Spring-Boot.git
 ```
 
 ### 2. Create Database in MySQL
