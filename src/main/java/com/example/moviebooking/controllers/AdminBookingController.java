@@ -11,8 +11,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/admin/bookings")
-@CrossOrigin(origins = "*", maxAge = 3600)
-@PreAuthorize("hasRole('ADMIN')")
 public class AdminBookingController {
     @Autowired
     private BookingService bookingService;

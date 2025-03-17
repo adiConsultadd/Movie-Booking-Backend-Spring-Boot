@@ -12,7 +12,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "*", maxAge = 3600)
 public class UserBookingController {
     @Autowired
     private BookingService bookingService;
