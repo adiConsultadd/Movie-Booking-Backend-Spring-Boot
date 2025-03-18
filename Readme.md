@@ -52,9 +52,31 @@ jwt.expiration=86400000
 ### 5. Or Run The JAR File
 ```bash
 cd target
-java -jar movie-booking-SNAPSHOT.jar
+java -jar movie-booking-backend.jar
 ```
 The application will start on `http://localhost:8080`
+
+### 6. Docker Build and Run Commands
+
+Build the application with Maven first:
+```bash
+./mvnw clean package
+```
+
+Build and run using Docker Compose:
+```bash
+docker-compose up --build
+```
+
+Run in detached mode:
+```bash
+docker-compose up -d
+```
+
+Stop the containers:
+```bash
+docker-compose down
+```
 
 ## Running Tests
 To run tests, use:
