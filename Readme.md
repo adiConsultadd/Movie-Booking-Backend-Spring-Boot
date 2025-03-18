@@ -86,49 +86,60 @@ To run tests, use:
 
 ## Folder Structure
 ```
-src/main/java/com/example/moviebooking/
-├── config/             # Configuration classes
-│   ├── SecurityConfig.java
-│   └── JwtConfig.java
-├── controllers/        # REST controllers
-│   ├── AuthController.java
-│   ├── AdminMovieController.java
-│   ├── AdminBookingController.java
-│   ├── UserMovieController.java
-│   └── UserBookingController.java
-├── models/             # Entity classes
-│   ├── User.java
-│   ├── Role.java
-│   ├── Movie.java
-│   ├── Showtime.java
-│   └── Booking.java  
-├── repositories/       # JPA repositories
-│   ├── UserRepository.java
-│   ├── RoleRepository.java
-│   ├── MovieRepository.java
-│   ├── ShowtimeRepository.java
-│   └── BookingRepository.java
-├── services/           # Business logic
-│   ├── UserService.java
-│   ├── MovieService.java
-│   ├── BookingService.java
-│   └── AuthService.java
-├── security/           # Security-related classes
-│   ├── JwtTokenProvider.java
-│   ├── JwtTokenFilter.java
-│   └── UserDetailsServiceImpl.java
-├── dto/                # Data Transfer Objects
-│   ├── UserDto.java
-│   ├── LoginRequest.java
-│   ├── SignupRequest.java
-│   ├── JwtResponse.java
-│   ├── MovieDto.java
-│   └── BookingDto.java
-├── exceptions/         # Custom exceptions
-│   ├── ResourceNotFoundException.java
-│   ├── UnauthorizedException.java
-│   └── GlobalExceptionHandler.java
-└── MovieBookingApplication.java  # Main class
+MovieBookingSystem/
+├── src/
+│   ├── main/
+│   │   ├── java/com/example/moviebooking/
+│   │   │   ├── config/             # Configuration classes
+│   │   │   │   ├── SecurityConfig.java
+│   │   │   │   └── JwtConfig.java
+│   │   │   ├── controllers/        # REST controllers
+│   │   │   │   ├── AuthController.java
+│   │   │   │   ├── AdminMovieController.java
+│   │   │   │   ├── AdminBookingController.java
+│   │   │   │   ├── UserMovieController.java
+│   │   │   │   └── UserBookingController.java
+│   │   │   ├── models/             # Entity classes
+│   │   │   │   ├── User.java
+│   │   │   │   ├── Role.java
+│   │   │   │   ├── Movie.java
+│   │   │   │   ├── Showtime.java
+│   │   │   │   └── Booking.java  
+│   │   │   ├── repositories/       # JPA repositories
+│   │   │   │   ├── UserRepository.java
+│   │   │   │   ├── RoleRepository.java
+│   │   │   │   ├── MovieRepository.java
+│   │   │   │   ├── ShowtimeRepository.java
+│   │   │   │   └── BookingRepository.java
+│   │   │   ├── services/           # Business logic
+│   │   │   │   ├── UserService.java
+│   │   │   │   ├── MovieService.java
+│   │   │   │   ├── BookingService.java
+│   │   │   │   └── AuthService.java
+│   │   │   ├── security/           # Security-related classes
+│   │   │   │   ├── JwtTokenProvider.java
+│   │   │   │   ├── JwtTokenFilter.java
+│   │   │   │   └── UserDetailsServiceImpl.java
+│   │   │   ├── dto/                # Data Transfer Objects
+│   │   │   │   ├── UserDto.java
+│   │   │   │   ├── LoginRequest.java
+│   │   │   │   ├── SignupRequest.java
+│   │   │   │   ├── JwtResponse.java
+│   │   │   │   ├── MovieDto.java
+│   │   │   │   └── BookingDto.java
+│   │   │   ├── exceptions/         # Custom exceptions
+│   │   │   │   ├── ResourceNotFoundException.java
+│   │   │   │   ├── UnauthorizedException.java
+│   │   │   │   └── GlobalExceptionHandler.java
+│   │   │   └── MovieBookingApplication.java  # Main class
+│   │   ├── resources/
+│   │   │   ├── application.properties        # Configuration file
+│   │   │   └── data.sql                      # Initial database data
+│   ├── test/                                 # Test cases
+├── pom.xml                                   # Maven configuration
+├── Dockerfile                                # Docker image configuration
+├── docker-compose.yml                        # Docker Compose file
+└── README.md                                 # Project README
 ```
 
 
