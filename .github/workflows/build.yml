@@ -53,3 +53,13 @@ jobs:
         docker compose up -d
         sleep 30
         docker compose down
+
+    - name: Build & push Docker image
+      uses: mr-smithers-excellent/docker-build-push@v6
+      with:
+        image: adityarathore/movie_booking_backend_springboot
+        tags: v1, latest
+        registry: docker.io
+        dockerfile: Dockerfile
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
