@@ -37,28 +37,6 @@ jobs:
       - name: Build with Maven
         run: mvn -B package --file pom.xml
 
-      - name: Run tests with coverage
-        run: mvn test jacoco:report
-
-      - name: Generate JaCoCo Badge
-        uses: cicirello/jacoco-badge-generator@v2
-        with:
-          generate-branches-badge: true
-          jacoco-csv-file: target/site/jacoco/jacoco.csv
-
-      - name: Upload coverage report
-        uses: actions/upload-artifact@v3
-        with:
-          name: jacoco-report
-          path: target/site/jacoco/
-
-      - name: Comment coverage on PR
-        uses: marocchino/sticky-pull-request-comment@v2
-        if: github.event_name == 'pull_request'
-        with:
-          recreate: true
-          path: .github/badges/jacoco.md
-
   docker-build:
     needs: build-and-test
     runs-on: ubuntu-latest
